@@ -1,0 +1,9 @@
+{
+  "name": "translatee",
+  "description": "Vencord Translate-Plugin mod",
+  "type": "module",
+  "scripts": {
+    "sync": "node ./scripts/sync.js"
+  },
+  "license": "ISC"
+}
