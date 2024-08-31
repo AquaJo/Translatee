@@ -6,7 +6,7 @@ This is a modified version of the [official Vencord translation plugin](https://
 
 ## What is this?
 
-This is a personalized version of the official plugin. I might add more stuff in the future and try to keep it updated with the upstream.
+This is a personalized version of the official plugin intended to add more or less useful features. I might add more stuff in the future and try to keep it updated with the upstream.
 
 To use this modified version feel free checking out the [Vencord Docs](https://docs.vencord.dev/), especially: [this](https://docs.vencord.dev/installing/) and [that](https://docs.vencord.dev/installing/custom-plugins/).\
 [`./translatee`](./translatee) folder should be placed as-is in the `userplugins` folder, nothing more to do — except you want to edit it yourself ^^
