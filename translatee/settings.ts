@@ -19,6 +19,7 @@
 import { definePluginSettings } from "@api/Settings";
 import { OptionType } from "@utils/types";
 
+
 export const settings = definePluginSettings({
     receivedInput: {
         type: OptionType.STRING,
@@ -78,6 +79,19 @@ export const settings = definePluginSettings({
         description: "Show a tooltip on the ChatBar button whenever a message is automatically translated",
         default: true
     },
+    translateToggle: {
+        type: OptionType.SELECT,
+        description: "Auto Translate Toggle Hotkey",
+        options: [
+            { label: "Alt + Shift", value: "altshift", default: true },
+            { label: "Alt + Shift + *", value: "altshift1" },
+            { label: "Alt + Shift + '", value: "altshift2" },
+            { label: "Alt + Shift + A", value: "altshiftA" },
+            { label: "Alt + Shift + T", value: "altshiftT" },
+            { label: "Disabled", value: "disabled" }
+        ] as const,
+        // onChange: translationHotkeyChanged
+    }
 }).withPrivateSettings<{
     showAutoTranslateAlert: boolean;
 }>();
@@ -95,3 +109,5 @@ export function resetLanguageDefaults() {
         settings.store.sentOutput = "en-us";
     }
 }
+
+

@@ -29,8 +29,10 @@ import { ChannelStore, Menu } from "@webpack/common";
 
 import { settings } from "./settings";
 import { setShouldShowTranslateEnabledTooltip, TranslateChatBarIcon, TranslateIcon } from "./TranslateIcon";
+import translateToggle from "./translateToggle";
 import { handleTranslate, TranslationAccessory } from "./TranslationAccessory";
 import { translate } from "./utils";
+translateToggle();
 
 const messageCtxPatch: NavContextMenuPatchCallback = (children, { message }) => {
     if (!message.content) return;
