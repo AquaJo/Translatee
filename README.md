@@ -16,4 +16,4 @@ To use this modified version feel free checking out the [Vencord Docs](https://d
 - Toggle hotkeys for auto translate
 - Binary translation
   - Choose binary as a "language" (source or target)
-  - To get the original text when translating binary back instead of Google’s translation on top **:** set `binary` as the target language (as well)
+  - To get the original text instead of Google’s translation on top when translating binary back **:** set `binary` as the target language (as well)
